@@ -1,13 +1,91 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #d2dbdd;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading-style {
+  padding: 30px 0px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #868686;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+.cards {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  margin: 6%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  width: 21.25%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 14px 10px -7px rgba(0, 0, 0, 0.1);
+  float: left;
+}
+
+.card:hover {
+  box-shadow:  0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(.8);
+}
+
+.card-img {
+  width: 100%;
+  height: 25vh;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+  background-color: #fff;
+}
+
+.card-info {
+  background-color: #fff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+  border-radius: 12px;
+}
+
+.card-category {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: grey;
+  background-color: #fff;
+}
+
+.card-title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  text-transform: capitalize;
+}
+
+button {
+  padding: 5px 8px;
+  text-transform: uppercase;
+  font-style: 14px;
+  font-weight: 500;
+  outline: none;
+  border: 2px solid black;
+  background-color: #fff;
+  color: #868686;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.5s;
 }
